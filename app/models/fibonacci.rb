@@ -1,7 +1,22 @@
 class Fibonacci < ActiveRecord::Base
+    def self.fibonacci(n)
+        a = 0
+        b = 1
+        # Compute Fibonacci number in the desired position.
+        n.times do
+            temp = a
+            a = b
+            # Add up previous two numbers in sequence.
+            b = temp + b
+            puts b
+        end
+        return a
+    end
+    
     def self.fibonacci_1( n )
         return  n  if n <= 1 
          fibonacci_1( n - 1 ) + fibonacci_1( n - 2 )
+         #p (1..n).map{|x| fibonacci_1(x)}
     end 
     #puts fibonacci_1( 10 )
     # => 55
