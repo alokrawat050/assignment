@@ -13,6 +13,8 @@ class Fibonacci < ActiveRecord::Base
         return a
     end
     
+    #call by Fibonacci.fibonacci 5
+    
     def self.fibonacci_1( n )
         return  n  if n <= 1 
          fibonacci_1( n - 1 ) + fibonacci_1( n - 2 )

@@ -12,6 +12,7 @@ class PrimeNumber < ActiveRecord::Base
       end
       primes
     end
+    #call by PrimeNumber.get_prime_number_upto 5
     
     def self.is_prime_number(n)
       puts "That's not an integer." unless n.is_a? Integer
@@ -28,3 +29,4 @@ class PrimeNumber < ActiveRecord::Base
       end
     end
 end
+#call by PrimeNumber.is_prime_number 5
