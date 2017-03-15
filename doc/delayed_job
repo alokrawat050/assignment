@@ -1,0 +1,5 @@
+gem 'delayed_job_active_record'
+
+rails generate delayed_job:active_record
+
+rake db:migrate
