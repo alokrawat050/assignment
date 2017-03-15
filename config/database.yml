@@ -72,9 +72,15 @@ development:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+test:
+  <<: *default
+  database: assignment_test
+  host: localhost
+  port: 5432
+
 staging:
   <<: *default
-  database: emp_portal
+  database: assignment
   username: <%= ENV['ASSIGNMENT_DATABASE_USER'] %>
   password: <%= ENV['ASSIGNMENT_DATABASE_PASSWORD'] %>
   host: ASSIGNMENT.rds.amazonaws.com
@@ -82,7 +88,7 @@ staging:
 
 production:
   <<: *default
-  database: emp_portal
+  database: assignment
   username: <%= ENV['ASSIGNMENT_DATABASE_USER'] %>
   password: <%= ENV['ASSIGNMENT_DATABASE_PASSWORD'] %>
   host: <%= ENV['ASSIGNMENT_DATABASE_HOST'] %>

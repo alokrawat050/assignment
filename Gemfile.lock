@@ -37,6 +37,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    attr_encrypted (3.0.3)
+      encryptor (~> 3.0.0)
     autoprefixer-rails (6.4.0)
       execjs
     bcrypt (3.1.11)
@@ -72,6 +74,7 @@ GEM
       devise
       zxcvbn-js (~> 4.2.0)
     diff-lcs (1.2.5)
+    encryptor (3.0.0)
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.7.0)
@@ -203,6 +206,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  attr_encrypted
   bcrypt (~> 3.1.7)
   bootstrap-sass (~> 3.3.5)
   byebug

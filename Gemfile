@@ -30,6 +30,9 @@ gem 'devise_zxcvbn'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# For DB Column Encryption
+gem 'attr_encrypted'
+
 gem 'delayed_job_active_record'
 #gem 'omniauth', '0.2.0'
 #gem 'httparty'

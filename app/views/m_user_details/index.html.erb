@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing M User Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Last name</th>
+      <th>First name</th>
+      <th>Last name kana</th>
+      <th>First name kana</th>
+      <th>Encrypted birth date</th>
+      <th>Encrypted mobile no</th>
+      <th>Encrypted tel no</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @m_user_details.each do |m_user_detail| %>
+      <tr>
+        <td><%= m_user_detail.last_name %></td>
+        <td><%= m_user_detail.first_name %></td>
+        <td><%= m_user_detail.last_name_kana %></td>
+        <td><%= m_user_detail.first_name_kana %></td>
+        <td><%= m_user_detail.encrypted_birth_date %></td>
+        <td><%= m_user_detail.encrypted_mobile_no %></td>
+        <td><%= m_user_detail.encrypted_tel_no %></td>
+        <td><%= link_to 'Show', m_user_detail %></td>
+        <td><%= link_to 'Edit', edit_m_user_detail_path(m_user_detail) %></td>
+        <td><%= link_to 'Destroy', m_user_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New M user detail', new_m_user_detail_path %>

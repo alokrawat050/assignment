@@ -29,8 +29,8 @@ module Workspace
     enable_starttls_auto: true,
     port: 587,
     authentication: :plain,
-    user_name: "set_your_mail_id@gmail.com",
-    password: "set_password_here",
+    user_name: "your_mail_id@gmail.com",
+    password: "your_password",
     openssl_verify_mode: 'none'
     }
     # Do not swallow errors in after_commit/after_rollback callbacks.

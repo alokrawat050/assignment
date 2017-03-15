@@ -30,7 +30,7 @@ to check table
 to password change
 \password username
 
-CREATE USER righton SUPERUSER PASSWORD 'rightonDB';
+CREATE USER assignment SUPERUSER PASSWORD 'assignmentDB';
 
 GRANT ALL ON <TAB_NAME> TO <USER_NAME>;
 

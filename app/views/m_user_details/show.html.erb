@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @m_user_detail.last_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @m_user_detail.first_name %>
+</p>
+
+<p>
+  <strong>Last name kana:</strong>
+  <%= @m_user_detail.last_name_kana %>
+</p>
+
+<p>
+  <strong>First name kana:</strong>
+  <%= @m_user_detail.first_name_kana %>
+</p>
+
+<p>
+  <strong>Encrypted birth date:</strong>
+  <%= @m_user_detail.encrypted_birth_date %>
+</p>
+
+<p>
+  <strong>Encrypted mobile no:</strong>
+  <%= @m_user_detail.encrypted_mobile_no %>
+</p>
+
+<p>
+  <strong>Encrypted tel no:</strong>
+  <%= @m_user_detail.encrypted_tel_no %>
+</p>
+
+<%= link_to 'Edit', edit_m_user_detail_path(@m_user_detail) %> |
+<%= link_to 'Back', m_user_details_path %>
